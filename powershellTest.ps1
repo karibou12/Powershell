@@ -48,3 +48,26 @@ function Get-ADUserCreationDate {
 $username = "your_username"
 $creationDate = Get-ADUserCreationDate -username $username
 Write-Host "Creation date of $username: $creationDate"
+
+
+
+
+# Function to get AD user information
+function Get-ADUserInfo {
+    param (
+        [string]$username
+    )
+    $user = Get-ADUser -Identity $username -Properties *
+    return $user
+}
+
+# Usage example
+$username = "your_username"
+$userInfo = Get-ADUserInfo -username $username
+Write-Host "AD User Information:"
+Write-Host "Username: $($userInfo.SamAccountName)"
+Write-Host "Full Name: $($userInfo.Name)"
+Write-Host "Email: $($userInfo.EmailAddress)"
+Write-Host "Creation Date: $($userInfo.whenCreated)"
+Write-Host "Last Logon Date: $($userInfo.LastLogonDate)"
+# Add more properties as needed
