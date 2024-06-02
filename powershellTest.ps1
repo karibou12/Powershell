@@ -47,7 +47,7 @@ function Get-ADUserCreationDate {
 # Usage example
 $username = "your_username"
 $creationDate = Get-ADUserCreationDate -username $username
-Write-Host "Creation date of $username: $creationDate"
+Write-Host "Creation date of $username : $creationDate"
 
 
 
