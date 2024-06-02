@@ -1,14 +1,12 @@
  server_groups:
  
   - name: groupe1
-    nr_config: 
-    -C:\Users\karib\Downloads\fichier.txt
+    nr_config: C:\Users\karib\Downloads\fichier.txt
     servers:
       - name: server1
       - name: server2
 
   - name: groupe2
-    nr_config:
-    -C:\Users\karib\Downloads\fichier2.txt
+    nr_config: C:\Users\karib\Downloads\fichier2.txt
     servers:
       - name: server3
