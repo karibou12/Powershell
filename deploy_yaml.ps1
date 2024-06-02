@@ -4,7 +4,7 @@ param(
     )
     
     # Chemin du fichier YAML contenant les groupes de serveurs et les configurations
-    $yamlFilePath = "C:\Users\karib\Downloads\servers.json"
+    $yamlFilePath = "C:\Users\karib\Downloads\servers.yaml"
 
     
     # Installer le module PowerYAML si nécessaire
